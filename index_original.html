@@ -1,0 +1,505 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CBHS Math Cup: 2022</title>
+  <meta name="description" content="A Jeopardy game for the Math Cup">
+  <meta name="Jake McNally" content="Math Cup">
+
+  <meta property="og:title" content="Return of the Math">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mainecodes.com">
+  <meta property="og:description" content="CBHS Math Cup Jeopardy board">
+  <meta property="og:image" content="image.png">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <nav>
+  </nav>
+  <content>
+    <div class="container-fluid" id="boardBackground">
+      <div class="row categoryRow">
+        <div class="col">
+          <p id="category_1">
+            RADICAL THOUGHTS
+          </p>
+        </div>
+        <div class="col">
+          <p id="category_2">
+            POWER TO THE PEOPLE
+          </p>
+        </div>
+        <div class="col">
+          <p id="category_3">
+            STRAIGHT TRIGGIN'
+          </p>
+        </div>
+        <div class="col">
+          <p id="category_4">
+            THE SHAPE OF CHANGE
+          </p>
+        </div>
+        <div class="col">
+          <p id="category_5">
+            GO FIGURE
+          </p>
+        </div>
+      </div>
+      <div class="row questionRow">
+        <div class="col">
+          <p id="c1_100" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c1_100">
+            \( 8^2 \)
+          </p>
+        </div>
+        <div class="col">
+          <p id="c2_100" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c2_100">
+            $100
+          </p>
+        </div>
+        <div class="col">
+          <p id="c3_100" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c3_100">
+            $100
+          </p>
+        </div>
+        <div class="col">
+          <p id="c4_100" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c4_100">
+            $100
+          </p>
+        </div>
+        <div class="col">
+          <p id="c5_100" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c5_100">
+            $100
+          </p>
+        </div>
+      </div>
+      <div class="row questionRow">
+        <div class="col">
+          <p id="c1_200" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c1_200">
+            $200
+          </p>
+        </div>
+        <div class="col">
+          <p id="c2_200" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c2_200">
+            $200
+          </p>
+        </div>
+        <div class="col">
+          <p id="c3_200" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c3_200">
+            $200
+          </p>
+        </div>
+        <div class="col">
+          <p id="c3_200" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c4_300">
+            $200
+          </p>
+        </div>
+        <div class="col">
+          <p id="c5_200" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c5_200">
+            $200
+          </p>
+        </div>
+      </div>
+      <div class="row questionRow">
+        <div class="col">
+          <p id="c1_300" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c1_300">
+            $300
+          </p>
+        </div>
+        <div class="col">
+          <p id="c2_300" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c2_300">
+            $300
+          </p>
+        </div>
+        <div class="col">
+          <p id="c3_300" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c3_300">
+            $300
+          </p>
+        </div>
+        <div class="col">
+          <p id="c4_300" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c4_300">
+            $300
+          </p>
+        </div>
+        <div class="col">
+          <p id="c5_300" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c5_300">
+            $300
+          </p>
+        </div>
+      </div>
+      <div class="row questionRow">
+        <div class="col">
+          <p id="c1_400" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c1_400">
+            $400
+          </p>
+        </div>
+        <div class="col">
+          <p id="c2_400" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c2_400">
+            $400
+          </p>
+        </div>
+        <div class="col">
+          <p id="c3_400" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c3_400">
+            $400
+          </p>
+        </div>
+        <div class="col">
+          <p id="c4_400" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c4_400">
+            $400
+          </p>
+        </div>
+        <div class="col">
+          <p id="c5_400" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c5_400">
+            $400
+          </p>
+        </div>
+      </div>
+      <div class="row questionRow">
+        <div class="col">
+          <p id="c2_500" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c1_500">
+            $500
+          </p>
+        </div>
+        <div class="col">
+          <p id="c2_500" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c2_500">
+            $500
+          </p>
+        </div>
+        <div class="col">
+          <p id="c3_500" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c3_500">
+            $500
+          </p>
+        </div>
+        <div class="col">
+          <p id="c4_500" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c4_500">
+            $500
+          </p>
+        </div>
+        <div class="col">
+          <p id="c5_500" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="c5_500">
+            $500
+          </p>
+        </div>
+      </div>
+
+    <!-- Modal -->
+    <div class="modal animate__animated animate__zoomIn" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p data-bs-target="#exampleModal2" data-bs-toggle="modal" id="modalText">This is where the question goes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>This is where the answer goes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div> <!-- board container -->
+  </content>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!--<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>-->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+
+    var columnList = ["ACTING FAMILIES", "WORLD CITY WALK", "SECRET LIVES OF TEACHERS", "HARRY TRUMAN", "YOU'RE IN THIS FOREIGN COUNTRY IF . . ."]
+
+    var questionBankSample = {
+        'c1_100':
+        {
+          'question': 'Ryan & Tatum',
+          'answer': "O'Neal",
+        },
+        'c1_200':
+        {
+          'question': 'Ben & Casey',
+          'answer': 'Affleck',
+        },
+        'c1_300':
+        {
+          'question': 'Dad & son Freddy',
+          'answer': 'Prinze',
+        },
+        'c1_400':
+        {
+          'question': 'Ephram & Stephanie',
+          'answer': 'Zimbalist',
+        },
+        'c1_500':
+        {
+          'question': 'Junius & his boys Edwin & John',
+          'answer': 'Booth',
+        },
+        'c2_100':
+        {
+          'question': "It's the city (also a country) that's home to St. Peter's Basilica",
+          'answer': "Vatican City",
+        },
+        'c2_200':
+        {
+          'question': 'In the 17th century the Corsairs controlled this current capital of Morocco',
+          'answer': 'Rabat',
+        },
+        'c2_300':
+        {
+          'question': "The first Japanese city to host the Winter Olympics, it's also famous for its beer & its Snow Festival",
+          'answer': 'Sapporo',
+        },
+        'c2_400':
+        {
+          'question': 'In 1942 Field Marshal Erich Von Manstein led a failed effort to assist surrounded German forces in this Soviet city',
+          'answer': 'Stalingrad',
+        },
+        'c2_500':
+        {
+          'question': "Found in the Dong Cheng district, this capital city's main railway station connects to Harbin & Qingdao",
+          'answer': 'Beijing',
+        },
+        'c3_100':
+        {
+          'question': "Ms. Dibbs knows a lot about Iran--I bet she works for this spy agency based in Langley, Virginia",
+          'answer': "the CIA",
+        },
+        'c3_200':
+        {
+          'question': "You buy the P.E. teacher's soccer injury story?  He hurt his knee jumping police cars on a Harley-Davidson this, duh",
+          'answer': 'a motorcycle',
+        },
+        'c3_300':
+        {
+          'question': "Everyone knows Mr. Lee made $100 million working for this Bill Gates co. & now teaches for $1 a year",
+          'answer': 'Microsoft',
+        },
+        'c3_400':
+        {
+          'question': "Mr. Conklin was a captain when the U.S. Navy was attacked at this site in Hawaii in 1941--he's that old!",
+          'answer': 'Pearl Harbor',
+        },
+        'c3_500':
+        {
+          'question': "Ms. Lenox's only friend is a vicious dog called a Doberman this, & the last kid who trick or treated her is still missing",
+          'answer': 'pinscher',
+        },
+        'c4_100':
+        {
+          'question': "In 1945 Harry served just 83 days in this job",
+          'answer': "vice president",
+        },
+        'c4_200':
+        {
+          'question': "It was the 4-word motto Truman kept on his desk in the Oval Office",
+          'answer': 'the buck stops here',
+        },
+        'c4_300':
+        {
+          'question': "Each May 8 this state officially celebrates Harry Truman's birthday",
+          'answer': 'Missouri',
+        },
+        'c4_400':
+        {
+          'question': "It's the month Truman began a famous speech with the line \"We have just dropped a new bomb...\"",
+          'answer': 'August, 1945',
+        },
+        'c4_500':
+        {
+          'question': "He was the last person beaten by Harry Truman in an election",
+          'answer': 'Thomas Dewey',
+        },
+        'c5_100':
+        {
+          'question': "In 1945 Harry served just 83 days in this job",
+          'answer': "vice president",
+        },
+        'c5_200':
+        {
+          'question': "It was the 4-word motto Truman kept on his desk in the Oval Office",
+          'answer': 'the buck stops here',
+        },
+        'c5_300':
+        {
+          'question': "Each May 8 this state officially celebrates Harry Truman's birthday",
+          'answer': 'Missouri',
+        },
+        'c5_400':
+        {
+          'question': "It's the month Truman began a famous speech with the line \"We have just dropped a new bomb...\"",
+          'answer': 'August, 1945',
+        },
+        'c5_500':
+        {
+          'question': "He was the last person beaten by Harry Truman in an election",
+          'answer': 'Thomas Dewey',
+        },
+    }
+
+    var questionBank = {
+        'c1_100':
+        {
+          'question': 'What is the cubed root of \( 8^2 \) ?',
+          'answer': "four",
+        },
+        'c1_200':
+        {
+          'question': 'Ben & Casey',
+          'answer': 'Affleck',
+        },
+        'c1_300':
+        {
+          'question': 'Dad & son Freddy',
+          'answer': 'Prinze',
+        },
+        'c1_400':
+        {
+          'question': 'Ephram & Stephanie',
+          'answer': 'Zimbalist',
+        },
+        'c1_500':
+        {
+          'question': 'Junius & his boys Edwin & John',
+          'answer': 'Booth',
+        },
+        'c2_100':
+        {
+          'question': "This is the Roman Numeral representation of your current calendar year.",
+          'answer': "What is MMXXII?",
+        },
+        'c2_200':
+        {
+          'question': "This digit was introduced to the western world around 800 B.C. by Arab mathematician al-Khwarizmi.",
+          'answer': "What is zero?",
+        },
+        'c2_300':
+        {
+          'question': "This positive real number, known as Pythagoras’s Constant is thought to be the world’s first irrational number.",
+          'answer': "What is the square root of 2?",
+        },
+        'c2_400':
+        {
+          'question': "This whole number is the number of years in the Gregorian Calendar that it takes to complete the full cycle of the 18,980 day Mayan Long calendar.",
+          'answer': "What is 52 ?",
+        },
+        'c2_500':
+        {
+          'question': "Found in the Dong Cheng district, this capital city's main railway station connects to Harbin & Qingdao",
+          'answer': 'Beijing',
+        },
+        'c3_100':
+        {
+          'question': "Ms. Dibbs knows a lot about Iran--I bet she works for this spy agency based in Langley, Virginia",
+          'answer': "the CIA",
+        },
+        'c3_200':
+        {
+          'question': "You buy the P.E. teacher's soccer injury story?  He hurt his knee jumping police cars on a Harley-Davidson this, duh",
+          'answer': 'a motorcycle',
+        },
+        'c3_300':
+        {
+          'question': "Everyone knows Mr. Lee made $100 million working for this Bill Gates co. & now teaches for $1 a year",
+          'answer': 'Microsoft',
+        },
+        'c3_400':
+        {
+          'question': "Mr. Conklin was a captain when the U.S. Navy was attacked at this site in Hawaii in 1941--he's that old!",
+          'answer': 'Pearl Harbor',
+        },
+        'c3_500':
+        {
+          'question': "Ms. Lenox's only friend is a vicious dog called a Doberman this, & the last kid who trick or treated her is still missing",
+          'answer': 'pinscher',
+        },
+        'c4_100':
+        {
+          'question': "In 1945 Harry served just 83 days in this job",
+          'answer': "vice president",
+        },
+        'c4_200':
+        {
+          'question': "It was the 4-word motto Truman kept on his desk in the Oval Office",
+          'answer': 'the buck stops here',
+        },
+        'c4_300':
+        {
+          'question': "Each May 8 this state officially celebrates Harry Truman's birthday",
+          'answer': 'Missouri',
+        },
+        'c4_400':
+        {
+          'question': "It's the month Truman began a famous speech with the line \"We have just dropped a new bomb...\"",
+          'answer': 'August, 1945',
+        },
+        'c4_500':
+        {
+          'question': "He was the last person beaten by Harry Truman in an election",
+          'answer': 'Thomas Dewey',
+        },
+        'c5_100':
+        {
+          'question': "In 1945 Harry served just 83 days in this job",
+          'answer': "vice president",
+        },
+        'c5_200':
+        {
+          'question': "It was the 4-word motto Truman kept on his desk in the Oval Office",
+          'answer': 'the buck stops here',
+        },
+        'c5_300':
+        {
+          'question': "Each May 8 this state officially celebrates Harry Truman's birthday",
+          'answer': 'Missouri',
+        },
+        'c5_400':
+        {
+          'question': "It's the month Truman began a famous speech with the line \"We have just dropped a new bomb...\"",
+          'answer': 'August, 1945',
+        },
+        'c5_500':
+        {
+          'question': "He was the last person beaten by Harry Truman in an election",
+          'answer': 'Thomas Dewey',
+        },
+    }
+    var exampleModal = document.getElementById('exampleModal')
+    exampleModal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      // questionContent = questionBank[square]['question'].toUpperCase()
+      questionContent = questionBank[square]['question']
+      // answerContent = questionBank[square]['answer'].toUpperCase()
+      answerContent = questionBank[square]['answer']
+      // Update the modal's content.
+      var modalParagraph = exampleModal.querySelector('.modal-body p')
+      // modalParagraph.textContent = questionContent
+      // modalParagraph.innerHTML = questionContent
+      modalParagraph.innerHTML = '/( 8^2 /)';
+      console.log(modalParagraph.innerHTML);
+      // MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+      MathJax.typeset();
+      var answerModal = exampleModal2.querySelector('.modal-body p')
+      // answerModal.textContent = answerContent
+      answerModal.innerHTML = answerContent
+      // document.getElementById(square).style.color = "gray";
+      document.getElementById(square).style.color = "darkBlue";
+    })
+  </script>
+</body>
+</html>

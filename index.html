@@ -1,0 +1,1125 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CBHS Math Cup: 2022</title>
+  <meta name="description" content="A Jeopardy game for the Math Cup">
+  <meta name="Jake McNally" content="Math Cup">
+
+  <meta property="og:title" content="Return of the Math">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mainecodes.com">
+  <meta property="og:description" content="CBHS Math Cup Jeopardy board">
+  <meta property="og:image" content="image.png">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="styles.css?v=1.0">
+
+</head>
+
+<body>
+  <nav>
+  </nav>
+  <content>
+    <div class="container-fluid" id="boardBackground">
+      <div class="row categoryRow">
+        <div class="col">
+          <p id="category_1">
+            GET RADICAL<br>
+          </p>
+        </div>
+        <div class="col">
+          <p id="category_2">
+            POWER TO THE PEOPLE
+          </p>
+        </div>
+        <div class="col">
+          <p id="category_3">
+            STRAIGHT TRIGGIN'
+          </p>
+        </div>
+        <div class="col">
+          <p id="category_4">
+            THE SHAPE OF CHANGE
+          </p>
+        </div>
+        <div class="col">
+          <p id="category_5">
+            GO FIGURE<br><br>
+          </p>
+        </div>
+      </div>
+      <div class="row questionRow">
+        <div class="col">
+          <p id="c1_100" data-bs-toggle="modal" data-bs-target="#c1_100_modal" data-bs-whatever="c1_100">
+            $100
+          </p>
+        </div>
+        <div class="col">
+          <p id="c2_100" data-bs-toggle="modal" data-bs-target="#c2_100_modal" data-bs-whatever="c2_100">
+            $100
+          </p>
+        </div>
+        <div class="col">
+          <p id="c3_100" data-bs-toggle="modal" data-bs-target="#c3_100_modal" data-bs-whatever="c3_100">
+            $100
+          </p>
+        </div>
+        <div class="col">
+          <p id="c4_100" data-bs-toggle="modal" data-bs-target="#c4_100_modal" data-bs-whatever="c4_100">
+            $100
+          </p>
+        </div>
+        <div class="col">
+          <p id="c5_100" data-bs-toggle="modal" data-bs-target="#c5_100_modal" data-bs-whatever="c5_100">
+            $100
+          </p>
+        </div>
+      </div>
+      <div class="row questionRow">
+        <div class="col">
+          <p id="c1_200" data-bs-toggle="modal" data-bs-target="#c1_200_modal" data-bs-whatever="c1_200">
+            $200
+          </p>
+        </div>
+        <div class="col">
+          <p id="c2_200" data-bs-toggle="modal" data-bs-target="#c2_200_modal" data-bs-whatever="c2_200">
+            $200
+          </p>
+        </div>
+        <div class="col">
+          <p id="c3_200" data-bs-toggle="modal" data-bs-target="#c3_200_modal" data-bs-whatever="c3_200">
+            $200
+          </p>
+        </div>
+        <div class="col">
+          <p id="c4_200" data-bs-toggle="modal" data-bs-target="#c4_200_modal" data-bs-whatever="c4_200">
+            $200
+          </p>
+        </div>
+        <div class="col">
+          <p id="c5_200" data-bs-toggle="modal" data-bs-target="#c5_200_modal" data-bs-whatever="c5_200">
+            $200
+          </p>
+        </div>
+      </div>
+      <div class="row questionRow">
+        <div class="col">
+          <p id="c1_300" data-bs-toggle="modal" data-bs-target="#c1_300_modal" data-bs-whatever="c1_300">
+            $300
+          </p>
+        </div>
+        <div class="col">
+          <p id="c2_300" data-bs-toggle="modal" data-bs-target="#c2_300_modal" data-bs-whatever="c2_300">
+            $300
+          </p>
+        </div>
+        <div class="col">
+          <p id="c3_300" data-bs-toggle="modal" data-bs-target="#c3_300_modal" data-bs-whatever="c3_300">
+            $300
+          </p>
+        </div>
+        <div class="col">
+          <p id="c4_300" data-bs-toggle="modal" data-bs-target="#c4_300_modal" data-bs-whatever="c4_300">
+            $300
+          </p>
+        </div>
+        <div class="col">
+          <p id="c5_300" data-bs-toggle="modal" data-bs-target="#c5_300_modal" data-bs-whatever="c5_300">
+            $300
+          </p>
+        </div>
+      </div>
+      <div class="row questionRow">
+        <div class="col">
+          <p id="c1_400" data-bs-toggle="modal" data-bs-target="#c1_400_modal" data-bs-whatever="c1_400">
+            $400
+          </p>
+        </div>
+        <div class="col">
+          <p id="c2_400" data-bs-toggle="modal" data-bs-target="#c2_400_modal" data-bs-whatever="c2_400">
+            $400
+          </p>
+        </div>
+        <div class="col">
+          <p id="c3_400" data-bs-toggle="modal" data-bs-target="#c3_400_modal" data-bs-whatever="c3_400">
+            $400
+          </p>
+        </div>
+        <div class="col">
+          <p id="c4_400" data-bs-toggle="modal" data-bs-target="#c4_400_modal" data-bs-whatever="c4_400">
+            $400
+          </p>
+        </div>
+        <div class="col">
+          <p id="c5_400" data-bs-toggle="modal" data-bs-target="#c5_400_modal" data-bs-whatever="c5_400">
+            $400
+          </p>
+        </div>
+      </div>
+      <div class="row questionRow">
+        <div class="col">
+          <p id="c1_500" data-bs-toggle="modal" data-bs-target="#c1_500_modal" data-bs-whatever="c1_500">
+            $500
+          </p>
+        </div>
+        <div class="col">
+          <p id="c2_500" data-bs-toggle="modal" data-bs-target="#c2_500_modal" data-bs-whatever="c2_500">
+            $500
+          </p>
+        </div>
+        <div class="col">
+          <p id="c3_500" data-bs-toggle="modal" data-bs-target="#c3_500_modal" data-bs-whatever="c3_500">
+            $500
+          </p>
+        </div>
+        <div class="col">
+          <p id="c4_500" data-bs-toggle="modal" data-bs-target="#c4_500_modal" data-bs-whatever="c4_500">
+            $500
+          </p>
+        </div>
+        <div class="col">
+          <p id="c5_500" data-bs-toggle="modal" data-bs-target="#c5_500_modal" data-bs-whatever="c5_500">
+            $500
+          </p>
+        </div>
+      </div>
+
+    <!-- Modal COLUMN 1 -->
+    <div class="modal animate__animated animate__zoomIn" id="c1_100_modal" tabindex="-1" role="dialog" aria-labelledby="c1_100_modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p data-bs-target="#c1_100_modal2" data-bs-toggle="modal" id="modalText">What is the cubed root of eight squared?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="c1_100_modal2" tabindex="-1" role="dialog" aria-labelledby="c1_100_modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>four</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal animate__animated animate__zoomIn" id="c1_200_modal" tabindex="-1" role="dialog" aria-labelledby="c1_200_modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p data-bs-target="#c1_200_modal2" data-bs-toggle="modal" id="modalText">What is the only pair of positive integers \( (m,\; n) \) for which <br>&nbsp &nbsp \(\sqrt{m} + \sqrt{n} = \sqrt{4} \) ?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="c1_200_modal2" tabindex="-1" role="dialog" aria-labelledby="c1_200_modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>\((1,\;1)\)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal animate__animated animate__zoomIn" id="c1_300_modal" tabindex="-1" role="dialog" aria-labelledby="c1_300_modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p data-bs-target="#c1_300_modal2" data-bs-toggle="modal" id="modalText">If the square root of circle \( C\)'s area is \(2022\pi\), how long is \( C\)'s radius? <br><em>(Provide an exact value with a rationalized denominator.)</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="c1_300_modal2" tabindex="-1" role="dialog" aria-labelledby="c1_300_modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>2022\(\sqrt{\pi}\)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal animate__animated animate__zoomIn" id="c1_400_modal" tabindex="-1" role="dialog" aria-labelledby="c1_400_modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p data-bs-target="#c1_400_modal2" data-bs-toggle="modal" id="modalText">DAILY DOUBLE!<br>Prepare for an All Play . . .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="c1_400_modal2" tabindex="-1" role="dialog" aria-labelledby="c1_400_modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>A cube number is a number multiplied by itself twice (for example \( 1^3 \) ). In order, list the cubed numbers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal animate__animated animate__zoomIn" id="c1_500_modal" tabindex="-1" role="dialog" aria-labelledby="c1_500_modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p data-bs-target="#c1_500_modal2" data-bs-toggle="modal" id="modalText">What ordered triple of integers \( (a,\;b,\;c) \), with \(c>b>a>0\), satisfies <br>\(\left(\sqrt{a} + \sqrt{b} + \sqrt{c}\right)^2 = \) <br> \( 10 + \sqrt{24} + \sqrt{40} + \sqrt{60}\) ?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="c1_500_modal2" tabindex="-1" role="dialog" aria-labelledby="c1_500_modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>\((2, \; 3,\; 5)\)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Modal COLUMN 2 -->
+    <div class="modal animate__animated animate__zoomIn" id="c2_100_modal" tabindex="-1" role="dialog" aria-labelledby="c2_100_modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p data-bs-target="#c2_100_modal2" data-bs-toggle="modal" id="modalText">What is the simplest form of \( \frac{2^{40}}{4^{20}} \) ?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="c2_100_modal2" tabindex="-1" role="dialog" aria-labelledby="c2_100_modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>1</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal animate__animated animate__zoomIn" id="c2_200_modal" tabindex="-1" role="dialog" aria-labelledby="c2_200_modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p data-bs-target="#c2_200_modal2" data-bs-toggle="modal" id="modalText">If \( i \) is the imaginary unit, what is the decimal equivalent of <br>&nbsp&nbsp \(\left(\frac{4}{5}\right)^{i^{434}} \) ?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="c2_200_modal2" tabindex="-1" role="dialog" aria-labelledby="c2_200_modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>1.25</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal animate__animated animate__zoomIn" id="c2_300_modal" tabindex="-1" role="dialog" aria-labelledby="c2_300_modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p data-bs-target="#c2_300_modal2" data-bs-toggle="modal" id="modalText">DAILY DOUBLE!<br> Prepare for an All Play . . .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="c2_300_modal2" tabindex="-1" role="dialog" aria-labelledby="c2_300_modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>In order, list the perfect squares.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal animate__animated animate__zoomIn" id="c2_400_modal" tabindex="-1" role="dialog" aria-labelledby="c2_400_modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p data-bs-target="#c2_400_modal2" data-bs-toggle="modal" id="modalText">If \( 3^{33} + 3^{33} + 3^{33} = 3^x \), what is the value of \( x \) ?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="c2_400_modal2" tabindex="-1" role="dialog" aria-labelledby="c2_400_modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>34</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal animate__animated animate__zoomIn" id="c2_500_modal" tabindex="-1" role="dialog" aria-labelledby="c2_500_modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p data-bs-target="#c2_500_modal2" data-bs-toggle="modal" id="modalText">What are all the values of \( x \) for which <br>&nbsp&nbsp \( \left(x^2 -5x + 5 \right)^{x^2-9x + 20} =1 \) ?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="c2_500_modal2" tabindex="-1" role="dialog" aria-labelledby="c2_500_modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>\(1,\;4,\; 5\)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal COLUMN 3 -->
+        <div class="modal animate__animated animate__zoomIn" id="c3_100_modal" tabindex="-1" role="dialog" aria-labelledby="c3_100_modalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p style="font-size: 50px;" data-bs-target="#c3_100_modal2" data-bs-toggle="modal" id="modalText">A \( 30-60-90 \) and \( 45-45-90 \) right triangle share a side and do not overlap. If the long leg of the \( 30-60-90 \) is the same segment as the hypotenuse of the \( 45-45-90 \) triangle, what is the measure of the legs of the \( 45-45-90 \) triangle if the hypotenuse of the \( 30-60-90 \) is \( 12\sqrt{3} \) ? <br><em>Give your answer an exact value.</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="c3_100_modal2" tabindex="-1" role="dialog" aria-labelledby="c3_100_modal2Label" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>\( 9\sqrt{2} \)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal animate__animated animate__zoomIn" id="c3_200_modal" tabindex="-1" role="dialog" aria-labelledby="c3_200_modalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p data-bs-target="#c3_200_modal2" data-bs-toggle="modal" id="modalText">What is the simplified numerical value of the quotient <br> \( \frac{sin\;10^{\circ}\;cos\;10^{\circ}\;tan\;10^{\circ}\;cot\;10^{\circ}\;sec\;10^{\circ}\;csc\;10^{\circ}}{sin\;20^{\circ}\;cos\;20^{\circ}\;tan\;20^{\circ}\;cot\;20^{\circ}\;sec\;20^{\circ}\;csc\;20^{\circ}} \) ?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="c3_200_modal2" tabindex="-1" role="dialog" aria-labelledby="c3_200_modal2Label" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal animate__animated animate__zoomIn" id="c3_300_modal" tabindex="-1" role="dialog" aria-labelledby="c3_300_modalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p data-bs-target="#c3_300_modal2" data-bs-toggle="modal" id="modalText">In degrees, what is the measure of the least positive angle \(x \) for which<br>\( \left(2^{sin^2\;x}\right)\left(2^{cos^2\;x}\right)\left(2^{tan^2\;x}\right) = 2^2 \) ?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="c3_300_modal2" tabindex="-1" role="dialog" aria-labelledby="c3_300_modal2Label" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>\( 45^{\circ} \)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal animate__animated animate__zoomIn" id="c3_400_modal" tabindex="-1" role="dialog" aria-labelledby="c3_400_modalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p data-bs-target="#c3_400_modal2" data-bs-toggle="modal" id="modalText">DAILY DOUBLE!<br> Prepare for an All Play . . .</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="c3_400_modal2" tabindex="-1" role="dialog" aria-labelledby="c3_400_modal2Label" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>In order, list all the coterminal angles (in degrees) where \( tan\;x = 1 \).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal animate__animated animate__zoomIn" id="c3_500_modal" tabindex="-1" role="dialog" aria-labelledby="c3_500_modalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p data-bs-target="#c3_500_modal2" data-bs-toggle="modal" id="modalText">If x and y are acute angles whose sum is \( 60^{\circ} \), what is the largest possible value of (tan x)(tan y) ?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="c3_500_modal2" tabindex="-1" role="dialog" aria-labelledby="c3_500_modal2Label" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>\( \frac{1}{3} \)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal COLUMN 4 -->
+            <div class="modal animate__animated animate__zoomIn" id="c4_100_modal" tabindex="-1" role="dialog" aria-labelledby="c4_100_modalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p data-bs-target="#c4_100_modal2" data-bs-toggle="modal" id="modalText">DAILY DOUBLE!<br> Prepare for an All Play . . .</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="c4_100_modal2" tabindex="-1" role="dialog" aria-labelledby="c4_100_modal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p style="font-size: 45px">The triangular number sequence is the representation of the numbers in the form of an equilateral triangle arranged in a series or sequence. The numbers in the triangular pattern are represented by dots and the sequence progresses by adding an additional row with one more dot.<br>In order, state the numbers of the triangular number sequence starting from 3.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal animate__animated animate__zoomIn" id="c4_200_modal" tabindex="-1" role="dialog" aria-labelledby="c4_200_modalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p data-bs-target="#c4_200_modal2" data-bs-toggle="modal" id="modalText">Two sides of a square are radii of the same circle. What is the ratio of the circumference of the circle to the perimeter of the square?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="c4_200_modal2" tabindex="-1" role="dialog" aria-labelledby="c4_200_modal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p>\( \frac{\pi}{2} \)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal animate__animated animate__zoomIn" id="c4_300_modal" tabindex="-1" role="dialog" aria-labelledby="c4_300_modalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p data-bs-target="#c4_300_modal2" data-bs-toggle="modal" id="modalText">The interior angles of a regular polygon each measure \( 150^{\circ} \). What is the name of the shape ?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="c4_300_modal2" tabindex="-1" role="dialog" aria-labelledby="c4_300_modal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p>dodecagon (12 sides)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal animate__animated animate__zoomIn" id="c4_400_modal" tabindex="-1" role="dialog" aria-labelledby="c4_400_modalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p data-bs-target="#c4_400_modal2" data-bs-toggle="modal" id="modalText">Two congruent squares overlap to form 3 congruent, non-overlapping rectangles. If the perimeter of each of these rectangles is 18, what is the area of each?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="c4_400_modal2" tabindex="-1" role="dialog" aria-labelledby="c4_400_modal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p>18</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal animate__animated animate__zoomIn" id="c4_500_modal" tabindex="-1" role="dialog" aria-labelledby="c4_500_modalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p data-bs-target="#c4_500_modal2" data-bs-toggle="modal" id="modalText">One vertex of an equilateral triangle is at the center of a circle and the other two vertices lie on the circle. If the circle's area is \( 16 \pi \), what is the triangle's perimeter?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="c4_500_modal2" tabindex="-1" role="dialog" aria-labelledby="c4_500_modal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p>12</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <!-- Modal COLUMN 5 -->
+            <div class="modal animate__animated animate__zoomIn" id="c5_100_modal" tabindex="-1" role="dialog" aria-labelledby="c5_100_modalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p data-bs-target="#c5_100_modal2" data-bs-toggle="modal" id="modalText">This is the Roman numeral representation of our current calendar year.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="c5_100_modal2" tabindex="-1" role="dialog" aria-labelledby="c5_100_modal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p>MMXXII</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal animate__animated animate__zoomIn" id="c5_200_modal" tabindex="-1" role="dialog" aria-labelledby="c5_200_modalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p data-bs-target="#c5_200_modal2" data-bs-toggle="modal" id="modalText">A man born in the year \( x^2 \) died on his 87th birthday, in the year \( (x+1)^2 \). In what year was he born ?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="c5_200_modal2" tabindex="-1" role="dialog" aria-labelledby="c5_200_modal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p>1849</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal animate__animated animate__zoomIn" id="c5_300_modal" tabindex="-1" role="dialog" aria-labelledby="c5_300_modalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p data-bs-target="#c5_300_modal2" data-bs-toggle="modal" id="modalText">This positive real number, known as Pythagoras's Constant is thought to be the world's first irrational number.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="c5_300_modal2" tabindex="-1" role="dialog" aria-labelledby="c5_300_modal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p>the square root of 2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal animate__animated animate__zoomIn" id="c5_400_modal" tabindex="-1" role="dialog" aria-labelledby="c5_400_modalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p style="font-size:55px;" data-bs-target="#c5_400_modal2" data-bs-toggle="modal" id="modalText">\( N \) is a 5-digit whole number. The 6-digit number \( N1 \), formed by placing the digit 1 after \( N \), is 3 times as large as the 6-digit number \( 1N \), formed by placing the 1 before \( N \). What is the 5-digit number \( N \) ?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="c5_400_modal2" tabindex="-1" role="dialog" aria-labelledby="c5_400_modal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p>42,857</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal animate__animated animate__zoomIn" id="c5_500_modal" tabindex="-1" role="dialog" aria-labelledby="c5_500_modalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p data-bs-target="#c5_500_modal2" data-bs-toggle="modal" id="modalText">DAILY DOUBLE!<br> Prepare for an All Play . . .</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal" id="c5_500_modal2" tabindex="-1" role="dialog" aria-labelledby="c5_500_modal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p>In the Fibonacci sequence, each number is the sum of the two preceding numbers. The first four numbers in the sequence are 0, 1, 1, 2. Continue the sequence in order.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+</div> <!-- board container -->
+  </content>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!--<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>-->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+
+    var columnList = ["ACTING FAMILIES", "WORLD CITY WALK", "SECRET LIVES OF TEACHERS", "HARRY TRUMAN", "YOU'RE IN THIS FOREIGN COUNTRY IF . . ."]
+
+    var questionBankSample = {
+        'c1_100':
+        {
+          'question': 'Ryan & Tatum',
+          'answer': "O'Neal",
+        },
+        'c1_200':
+        {
+          'question': 'Ben & Casey',
+          'answer': 'Affleck',
+        },
+        'c1_300':
+        {
+          'question': 'Dad & son Freddy',
+          'answer': 'Prinze',
+        },
+        'c1_400':
+        {
+          'question': 'Ephram & Stephanie',
+          'answer': 'Zimbalist',
+        },
+        'c1_500':
+        {
+          'question': 'Junius & his boys Edwin & John',
+          'answer': 'Booth',
+        },
+        'c2_100':
+        {
+          'question': "It's the city (also a country) that's home to St. Peter's Basilica",
+          'answer': "Vatican City",
+        },
+        'c2_200':
+        {
+          'question': 'In the 17th century the Corsairs controlled this current capital of Morocco',
+          'answer': 'Rabat',
+        },
+        'c2_300':
+        {
+          'question': "The first Japanese city to host the Winter Olympics, it's also famous for its beer & its Snow Festival",
+          'answer': 'Sapporo',
+        },
+        'c2_400':
+        {
+          'question': 'In 1942 Field Marshal Erich Von Manstein led a failed effort to assist surrounded German forces in this Soviet city',
+          'answer': 'Stalingrad',
+        },
+        'c2_500':
+        {
+          'question': "Found in the Dong Cheng district, this capital city's main railway station connects to Harbin & Qingdao",
+          'answer': 'Beijing',
+        },
+        'c3_100':
+        {
+          'question': "Ms. Dibbs knows a lot about Iran--I bet she works for this spy agency based in Langley, Virginia",
+          'answer': "the CIA",
+        },
+        'c3_200':
+        {
+          'question': "You buy the P.E. teacher's soccer injury story?  He hurt his knee jumping police cars on a Harley-Davidson this, duh",
+          'answer': 'a motorcycle',
+        },
+        'c3_300':
+        {
+          'question': "Everyone knows Mr. Lee made $100 million working for this Bill Gates co. & now teaches for $1 a year",
+          'answer': 'Microsoft',
+        },
+        'c3_400':
+        {
+          'question': "Mr. Conklin was a captain when the U.S. Navy was attacked at this site in Hawaii in 1941--he's that old!",
+          'answer': 'Pearl Harbor',
+        },
+        'c3_500':
+        {
+          'question': "Ms. Lenox's only friend is a vicious dog called a Doberman this, & the last kid who trick or treated her is still missing",
+          'answer': 'pinscher',
+        },
+        'c4_100':
+        {
+          'question': "In 1945 Harry served just 83 days in this job",
+          'answer': "vice president",
+        },
+        'c4_200':
+        {
+          'question': "It was the 4-word motto Truman kept on his desk in the Oval Office",
+          'answer': 'the buck stops here',
+        },
+        'c4_300':
+        {
+          'question': "Each May 8 this state officially celebrates Harry Truman's birthday",
+          'answer': 'Missouri',
+        },
+        'c4_400':
+        {
+          'question': "It's the month Truman began a famous speech with the line \"We have just dropped a new bomb...\"",
+          'answer': 'August, 1945',
+        },
+        'c4_500':
+        {
+          'question': "He was the last person beaten by Harry Truman in an election",
+          'answer': 'Thomas Dewey',
+        },
+        'c5_100':
+        {
+          'question': "In 1945 Harry served just 83 days in this job",
+          'answer': "vice president",
+        },
+        'c5_200':
+        {
+          'question': "It was the 4-word motto Truman kept on his desk in the Oval Office",
+          'answer': 'the buck stops here',
+        },
+        'c5_300':
+        {
+          'question': "Each May 8 this state officially celebrates Harry Truman's birthday",
+          'answer': 'Missouri',
+        },
+        'c5_400':
+        {
+          'question': "It's the month Truman began a famous speech with the line \"We have just dropped a new bomb...\"",
+          'answer': 'August, 1945',
+        },
+        'c5_500':
+        {
+          'question': "He was the last person beaten by Harry Truman in an election",
+          'answer': 'Thomas Dewey',
+        },
+    }
+
+    var questionBank = {
+        'c1_100':
+        {
+          'question': 'What is the cubed root of \( 8^2 \) ?',
+          'answer': "four",
+        },
+        'c1_200':
+        {
+          'question': 'Ben & Casey',
+          'answer': 'Affleck',
+        },
+        'c1_300':
+        {
+          'question': 'Dad & son Freddy',
+          'answer': 'Prinze',
+        },
+        'c1_400':
+        {
+          'question': 'Ephram & Stephanie',
+          'answer': 'Zimbalist',
+        },
+        'c1_500':
+        {
+          'question': 'Junius & his boys Edwin & John',
+          'answer': 'Booth',
+        },
+        'c2_100':
+        {
+          'question': "This is the Roman Numeral representation of your current calendar year.",
+          'answer': "What is MMXXII?",
+        },
+        'c2_200':
+        {
+          'question': "This digit was introduced to the western world around 800 B.C. by Arab mathematician al-Khwarizmi.",
+          'answer': "What is zero?",
+        },
+        'c2_300':
+        {
+          'question': "This positive real number, known as Pythagoras’s Constant is thought to be the world’s first irrational number.",
+          'answer': "What is the square root of 2?",
+        },
+        'c2_400':
+        {
+          'question': "This whole number is the number of years in the Gregorian Calendar that it takes to complete the full cycle of the 18,980 day Mayan Long calendar.",
+          'answer': "What is 52 ?",
+        },
+        'c2_500':
+        {
+          'question': "Found in the Dong Cheng district, this capital city's main railway station connects to Harbin & Qingdao",
+          'answer': 'Beijing',
+        },
+        'c3_100':
+        {
+          'question': "Ms. Dibbs knows a lot about Iran--I bet she works for this spy agency based in Langley, Virginia",
+          'answer': "the CIA",
+        },
+        'c3_200':
+        {
+          'question': "You buy the P.E. teacher's soccer injury story?  He hurt his knee jumping police cars on a Harley-Davidson this, duh",
+          'answer': 'a motorcycle',
+        },
+        'c3_300':
+        {
+          'question': "Everyone knows Mr. Lee made $100 million working for this Bill Gates co. & now teaches for $1 a year",
+          'answer': 'Microsoft',
+        },
+        'c3_400':
+        {
+          'question': "Mr. Conklin was a captain when the U.S. Navy was attacked at this site in Hawaii in 1941--he's that old!",
+          'answer': 'Pearl Harbor',
+        },
+        'c3_500':
+        {
+          'question': "Ms. Lenox's only friend is a vicious dog called a Doberman this, & the last kid who trick or treated her is still missing",
+          'answer': 'pinscher',
+        },
+        'c4_100':
+        {
+          'question': "In 1945 Harry served just 83 days in this job",
+          'answer': "vice president",
+        },
+        'c4_200':
+        {
+          'question': "It was the 4-word motto Truman kept on his desk in the Oval Office",
+          'answer': 'the buck stops here',
+        },
+        'c4_300':
+        {
+          'question': "Each May 8 this state officially celebrates Harry Truman's birthday",
+          'answer': 'Missouri',
+        },
+        'c4_400':
+        {
+          'question': "It's the month Truman began a famous speech with the line \"We have just dropped a new bomb...\"",
+          'answer': 'August, 1945',
+        },
+        'c4_500':
+        {
+          'question': "He was the last person beaten by Harry Truman in an election",
+          'answer': 'Thomas Dewey',
+        },
+        'c5_100':
+        {
+          'question': "In 1945 Harry served just 83 days in this job",
+          'answer': "vice president",
+        },
+        'c5_200':
+        {
+          'question': "It was the 4-word motto Truman kept on his desk in the Oval Office",
+          'answer': 'the buck stops here',
+        },
+        'c5_300':
+        {
+          'question': "Each May 8 this state officially celebrates Harry Truman's birthday",
+          'answer': 'Missouri',
+        },
+        'c5_400':
+        {
+          'question': "It's the month Truman began a famous speech with the line \"We have just dropped a new bomb...\"",
+          'answer': 'August, 1945',
+        },
+        'c5_500':
+        {
+          'question': "He was the last person beaten by Harry Truman in an election",
+          'answer': 'Thomas Dewey',
+        },
+    }
+
+    var c1_100_modal = document.getElementById('c1_100_modal')
+    c1_100_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c1_200_modal = document.getElementById('c1_200_modal')
+    c1_200_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c1_300_modal = document.getElementById('c1_300_modal')
+    c1_300_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c1_400_modal = document.getElementById('c1_400_modal')
+    c1_400_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c1_500_modal = document.getElementById('c1_500_modal')
+    c1_500_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+
+    var c2_100_modal = document.getElementById('c2_100_modal')
+    c2_100_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c2_200_modal = document.getElementById('c2_200_modal')
+    c2_200_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c2_300_modal = document.getElementById('c2_300_modal')
+    c2_300_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c2_400_modal = document.getElementById('c2_400_modal')
+    c2_400_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c2_500_modal = document.getElementById('c2_500_modal')
+    c2_500_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+
+    var c3_100_modal = document.getElementById('c3_100_modal')
+    c3_100_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c3_200_modal = document.getElementById('c3_200_modal')
+    c3_200_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c3_300_modal = document.getElementById('c3_300_modal')
+    c3_300_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c3_400_modal = document.getElementById('c3_400_modal')
+    c3_400_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c3_500_modal = document.getElementById('c3_500_modal')
+    c3_500_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+
+    var c4_100_modal = document.getElementById('c4_100_modal')
+    c4_100_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c4_200_modal = document.getElementById('c4_200_modal')
+    c4_200_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c4_300_modal = document.getElementById('c4_300_modal')
+    c4_300_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c4_400_modal = document.getElementById('c4_400_modal')
+    c4_400_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c4_500_modal = document.getElementById('c4_500_modal')
+    c4_500_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+
+    var c5_100_modal = document.getElementById('c5_100_modal')
+    c5_100_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c5_200_modal = document.getElementById('c5_200_modal')
+    c5_200_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c5_300_modal = document.getElementById('c5_300_modal')
+    c5_300_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c5_400_modal = document.getElementById('c5_400_modal')
+    c5_400_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+    var c5_500_modal = document.getElementById('c5_500_modal')
+    c5_500_modal.addEventListener('show.bs.modal', function (event) {
+      // Button that triggered the modal
+      var button = event.relatedTarget
+      // Extract info from data-bs-* attributes
+      var square = button.getAttribute('data-bs-whatever')
+      document.getElementById(square).style.color = "darkBlue";
+    })
+  </script>
+</body>
+</html>

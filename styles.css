@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Swiss-911-compressed;
+  src: url('fonts/swiss-911-compressed.otf');
+  src: local('Swiss-911-compressed');
+}
+
+@font-fact: {
+  font-family: arroyo;
+  src: url(fonts/arroy.ttf)
+}
+
+#boardBackground {
+  background-color: black;
+}
+p {
+  background-color: DarkBlue;
+  font-family: Impact, sans-serif;
+  font-size: 4em;
+  text-align: center;
+}
+
+.categoryRow {
+  color: white;
+}
+
+.categoryRow p {
+  font-size: 2.5em;
+}
+
+.questionRow {
+  color: GoldenRod;
+  text-shadow: 0.1em 0.1em black,
+               0.2em 0.2em black,
+               0.3em 0.3em black,
+               0.4em 0.4em black,
+               0.5em 0.5em black,
+               0.6em 0.6em black,
+               0.7em 0.7em black,
+               0.8em 0.8em black;
+}
+
+.modal-content {
+  background-color: DarkBlue;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-backdrop {
+  background:none;
+}
+
+#category_1 {
+  font-size: 3em;
+}
+
+#category_2 {
+  font-size: 3em;
+}
+
+#category_3 {
+  font-size: 3em;
+}
+
+#category_4 {
+  font-size: 3em;
+}
+
+#category_5 {
+  font-size: 3em;
+}
+.modal-body p {
+  padding-top: 2em;
+  font-family: 'ITC Korinna', 'Georgia';
+  font-size: 5em;
+}
